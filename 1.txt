@@ -1,0 +1,91 @@
+------------vscode configuration---------------------
+file -> Preferences -> settings (User Settings/Workspace Settings)
+file -> Preferences -> settings -> button (open setting JSON)
+
+-------------project steps---------------------------
+npm init --force       (new projet)
+git init               (create repositrory)
+npm install --save-dev parcel-bundler
+npm install prettier -g (or vscode extension)
+npm install eslint --save-dev
+npm install --save-dev eslint prettier babel-eslint
+npm install --save-dev eslint-plugin-react
+
+
+
+run project: npx parcel src/index.html
+-----------------code tyding: prettier---------------
+npm install prettier -g
+prettier -v
+prettier --write ./src/index.html
+----
+vscode prettier
+1. CMD + Shift + P -> Format Document
+OR
+1. Select the text you want to Prettify
+2. CMD + Shift + P -> Format Selection
+---
+.prettierrc.json.
+
+-----------------bundler: parcel-bundler-------------
+npm install parcel-bundler
+npm install --save-dev parcel-bundler
+parcel watch index.html
+parcel build index.html
+parcel build index.html --experimental-scope-hoisting
+https://createapp.dev/parcel
+
+-----------------managing dependencies: npm----------
+npm init
+npm update
+npm audit
+npm ls dependency_name
+npm run dev ... (scripts package json commands)
+
+-----------------linting: eslint----------
+npm install eslint --save-dev
+npm install --save-dev eslint-plugin-react
+npx eslint yourfile.js
+.eslintrc.json
+
+https://www.npmjs.com/search?q=keywords:eslintconfig
+https://eslint.org/docs/rules/
+
+-----------------linting: eslint----------
+out of the box with parcel
+
+-----------------: postcss----------
+.postcssrc
+
+
+APP-------------------------------------------------------------
+JSX, a React-related set of syntax extensions that allow you to do things like defining component structures inside JavaScript. You won't need to know React to follow this tutorial, but we've included this to give you an idea of how a non-native web language could be integrated into a toolchain.
+The latest built-in JavaScript features (at time of writing), such as import.
+Useful development tools such as Prettier for formatting and eslint for linting.
+PostCSS to provide CSS nesting capabilities.
+Parcel to build and minify our code, and to write a bunch of configuration file content automatically for us.
+GitHub to manage our source code control.
+Netlify to automate our deployment process.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-------------------------------------------------------------
+It can be arduous to run the initial command against each file, and it would be useful to have a single command to do this for us (and the same will go for our linting tools).
+
+There's many different ways to solve this problem; here's just a few:
+
+Using npm scripts to run multiple commands from the command line in one go, such as npm run tidy-code.
+Using special "git hooks" to test if the code is formatted before a commit.
+Using code editor plugins to run prettier commands each time a file is saved.
