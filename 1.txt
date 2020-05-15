@@ -58,6 +58,10 @@ out of the box with parcel
 .postcssrc
 
 
+---------------: netlify------------------
+https://www.netlify.com/tags/tutorial/
+
+
 APP-------------------------------------------------------------
 JSX, a React-related set of syntax extensions that allow you to do things like defining component structures inside JavaScript. You won't need to know React to follow this tutorial, but we've included this to give you an idea of how a non-native web language could be integrated into a toolchain.
 The latest built-in JavaScript features (at time of writing), such as import.
