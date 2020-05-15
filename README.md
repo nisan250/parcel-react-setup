@@ -1,3 +1,5 @@
 # parcel-react-setup
-Working with parcel and more tools... the project is from MDN.
-live site: https://nisan250.github.io/parcel-react-setup
+Using parcel, tools and testing. 
+Deploying with netlify.
+the project src itself is a project from MDN.
+live site: https://parcel-react-setup.netlify.app/
