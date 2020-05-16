@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "parcel serve src/index.html",
     "test": "node tests/nasa-feed.test.js",
-    "build": "npm run test && parcel build src/index.html"
+    "build": "npm run test && parcel build src/index.html",
+    "pretush": "prettier  --write src/**/*.js"
   },
   "keywords": [],
   "author": "",

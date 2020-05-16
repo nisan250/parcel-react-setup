@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react";
 const YesNo = new Map([
-  [true, 'YES 😱'],
-  [false, 'nope'],
+  [true, "YES 😱"],
+  [false, "nope"],
 ]);
 
 export default function Hazard({ yes }) {
